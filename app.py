@@ -403,13 +403,7 @@ workflow.add_edge("tools_and_summarize", END)
 
 app_graph = workflow.compile()
 
-# Visualize as PNG
-from PIL import Image
-from io import BytesIO
 
-png_data = app_graph.get_graph().draw_png()
-arch = Image.open(BytesIO(png_data))
-arch.save("workflow_akash.png")
 #import pdb; pdb.set_trace()
 # --- FastAPI Models ---
 
