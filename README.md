@@ -54,3 +54,31 @@ file:///path/to/your/project/index.html
 ## ✨ Usage
 
 The application uses the `nomic-embed-text` and `llama3.2` models from Ollama to process requests from the frontend, enabling text generation and other functionalities. Simply interact with the interface in your browser to start using the application.
+
+-----
+
+## ☁️ Running on Google Colab
+
+You can also run this application in a Google Colab environment. This is particularly useful if you don't want to install dependencies locally.
+
+### Step 1: Open the Colab Notebook
+
+Access the pre-configured Colab notebook using the following link:
+
+[Colab Link: `https://colab.research.google.com/drive/1MJEEPeeh_GsvQJNd4BGHPbvyms06iHoU?usp=sharing`](https://www.google.com/search?q=%5Bhttps://colab.research.google.com/drive/1MJEEPeeh_GsvQJNd4BGHPbvyms06iHoU%3Fusp%3Dsharing%5D\(https://colab.research.google.com/drive/1MJEEPeeh_GsvQJNd4BGHPbvyms06iHoU%3Fusp%3Dsharing\))
+
+### Step 2: Run the Notebook Cells
+
+Follow the instructions within the notebook and run all the cells. This will set up the environment, install the necessary libraries, and start the backend server.
+
+### Step 3: Get the ngrok URL
+
+After the notebook has finished running, it will provide a public URL (a `ngrok` link) that exposes your local server. Copy this link.
+
+### Step 4: Update and Open `index.html`
+
+1.  Download the `index.html` file to your local machine.
+2.  Open the downloaded `index.html` file in a text editor.
+3.  Find the `fetch` part of the code and replace the `localhost` URL with the `ngrok` link you copied from the Colab notebook. For example, change `http://localhost:8000` to `https://your-ngrok-url.ngrok-free.app`.
+4.  Save the `index.html` file.
+5.  Open the modified `index.html` file in your web browser to start interacting with the chatbot.
