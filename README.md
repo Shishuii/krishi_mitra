@@ -1,33 +1,56 @@
-README
-This document provides instructions on how to set up and run the project. The application consists of a backend Python server and a frontend HTML interface.
+# AI-Powered Application
 
-🚀 Prerequisites
-Before you can run the application, you need to have Ollama installed on your system. If you don't have it, please follow the official installation guide for your operating system.
+This repository contains a simple web application that uses a Python backend and an HTML frontend. It leverages **Ollama** to access powerful language models for various tasks.
 
-Once Ollama is installed, you must pull the required language models by running the following commands in your terminal:
+-----
 
+## 🚀 Prerequisites
+
+Before you begin, you must have **Ollama** installed on your system. You can find the official installation guide on the [Ollama website](https://ollama.com/download).
+
+Once Ollama is installed, pull the required language models by running these commands in your terminal:
+
+```bash
 ollama pull nomic-embed-text
-ollama pull llama3.2:3b 
+ollama pull llama3.2:3b
+```
 
-Can use any other tool calling enable llm as well.
-just cahnge in app.py
-🛠️ Setup & Running the Application
-Step 1: Install Python Dependencies
-Navigate to the project directory in your terminal and install the required Python libraries from the requirements.txt file.
+If you prefer to use a different model, remember to update the model name in the `app.py` file.
 
+-----
+
+## 🛠️ Setup & Running the Application
+
+Follow these steps to get the application up and running.
+
+### Step 1: Install Python Dependencies
+
+First, navigate to the project directory in your terminal and install the required Python libraries using `pip`:
+
+```bash
 pip install -r requirements.txt
+```
 
-Step 2: Start the Backend
-Now, you can run the Python backend script. This will start a local server that the frontend will connect to.
+### Step 2: Start the Backend Server
 
+Next, run the Python script to start the local server.
+
+```bash
 python app.py
+```
 
-You should see output indicating that the server is running, likely on a port like 8000 or 5000.
+You'll see a message in your terminal indicating that the server is running, typically on a port like `8000` or `5000`.
 
-Step 3: Access the Application
-With the backend server running, you can now open the frontend. Simply open the index.html file in your preferred web browser.
+### Step 3: Access the Frontend
 
+With the backend running, open the `index.html` file in your web browser to access the application.
+
+```
 file:///path/to/your/project/index.html
+```
 
-✨ Usage
-Once the page loads, you can interact with the application. The backend server uses the nomic-embed-text and llama3.1 models to process requests from the frontend, enabling various functionalities such as text generation or embeddings.
+-----
+
+## ✨ Usage
+
+The application uses the `nomic-embed-text` and `llama3.2` models from Ollama to process requests from the frontend, enabling text generation and other functionalities. Simply interact with the interface in your browser to start using the application.
